@@ -1,23 +1,7 @@
 const connection = require("./db/database");
 const cTable = require("console.table");
-//import mysql2
-const mysql = require("mysql2");
 
-const { mainMenu,
-    viewAllEmployees,
-    viewAllDepartments,
-    viewAllEmpRoles,
-    viewAllEmpByDept,
-    viewAllEmpByManager,
-    viewDeptartmentBudget,
-    addEmployee,
-    addEmpRole,
-    addDeptartment,
-    updateEmpRole,
-    updateEmpManager,
-    deleteEmployee,
-    deleteRole,
-    deleteDeptartment, } = require("./lib/queries");
+const { mainMenu } = require("./lib/queries");
 
 //create the connection
 connection.connect((err) => {

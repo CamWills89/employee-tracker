@@ -1,5 +1,4 @@
 const mysql = require('mysql2');
-
 //used to keep my password safe in a .env file that is not exported with the project
 require("dotenv").config();
 
