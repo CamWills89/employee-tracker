@@ -1,4 +1,5 @@
 const connection = require("./db/database");
+const cTable = require("console.table");
 //import mysql2
 const mysql = require("mysql2");
 
