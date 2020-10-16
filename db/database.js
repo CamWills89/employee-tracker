@@ -1,15 +1,15 @@
 //import mysql2
-const mysql = require('mysql2');
+const mysql = require("mysql2");
+//used to keep my password safe in a .env file that is not exported with the project
+require("dotenv").config();
 
 // Create the connection to database
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: "localhost",
   port: 3306,
-  // Your MySQL username
-  user: 'root',
-  // Your MySQL password
-  password: '',
-  database: 'employees'
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: "employees",
 });
 
-  module.exports = db;
+module.exports = db;
