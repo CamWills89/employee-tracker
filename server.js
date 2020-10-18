@@ -1,7 +1,7 @@
 const connection = require("./db/database");
 const cTable = require("console.table");
 
-const { mainMenu } = require("./lib/queries");
+const { mainMenu } = require("./lib/app");
 
 //create the connection
 connection.connect((err) => {
